@@ -1,0 +1,10 @@
+#idea
+out
+*.ipr
+*.iws
+*.iml
+.idea/*
+!.idea/codeStyles
+
+# my api key
+API_KEY.json
