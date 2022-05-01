@@ -1,6 +1,10 @@
 import requests
 import json
 from pprint import pprint
+from bs4 import BeautifulSoup
+import re
+import os
+import threading
 
 
 # Returns GET request response from url
@@ -30,17 +34,24 @@ def get_bazaar_buy_order_value(bazaar_data):
             # If it's the best price
             if idx == 0:
                 item_expected_value = buy_order.get("pricePerUnit", 0)
-                item_sum_coins += buy_order.get("amount", 0) * buy_order.get("pricePerUnit", 0)
+                item_sum_coins += buy_order.get("amount", 0) * buy_order.get(
+                    "pricePerUnit", 0
+                )
 
             # If it's not the best price, check for reasonable price
             else:
-                if buy_order.get("pricePerUnit", 0) < (item_expected_value * price_increase_threshold):
-                    item_sum_coins += buy_order.get("amount", 0) * buy_order.get("pricePerUnit", 0)
+                if buy_order.get("pricePerUnit", 0) < (
+                    item_expected_value * price_increase_threshold
+                ):
+                    item_sum_coins += buy_order.get("amount", 0) * buy_order.get(
+                        "pricePerUnit", 0
+                    )
 
         print(f"{item_name} | {round(item_sum_coins)}")
         sum_coins += item_sum_coins
 
     return sum_coins
+
 
 # API_KEY.json is not in GitHub repo
 API_FILE = open("API_KEY.json", "r")
