@@ -7,4 +7,4 @@ Supai compares the raw material cost and Bazaar sell cost for every item in the 
 
 **MORE FEATURES COMING SOON!**
 
-![Hypixel Skyblock Bazzar Banner](https://www.google.com/url?sa=i&url=https%3A%2F%2Fhypixel.net%2Fthreads%2Fskyblock-patch-0-7-7-bazaar.2655146%2Fpage-23&psig=AOvVaw3d2ExnuUenXGdXlG6VQ1gg&ust=1651547580139000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLCh97Lsv_cCFQAAAAAdAAAAABAE)
+![Hypixel Skyblock Bazzar Banner](https://staticassets.hypixel.net/news/5e66ec4be8f68.sb%200%207%207.png)
