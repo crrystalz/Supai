@@ -54,7 +54,7 @@ def get_bazaar_buy_order_value(bazaar_data):
 
 
 # API_KEY.json is not in GitHub repo
-API_FILE = open("API_KEY.json", "r")
+API_FILE = open("../API_KEY.json", "r")
 API_KEY = json.loads(API_FILE.read())["API_KEY"]
 
 pprint(get_bazaar_buy_order_value(get_bazaar_data()))
